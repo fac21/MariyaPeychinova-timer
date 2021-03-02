@@ -1,5 +1,5 @@
 # MariyaPeychinova-timer
-Pomodoro timer mini-project from Workshop4 of FAC21 precourse
+## Pomodoro timer mini-project from Workshop4 of FAC21 precourse
 
 I started with creatind a new private repository for my project within the FAC21 organisation on [GitHub](https://github.com/fac21/MariyaPeychinova-timer) and including a README.md.
 
@@ -9,9 +9,10 @@ Using the terminal, in the MariyaPeychinova-timer directori I created new direct
 
 Starting with the html file, I created the main HTML page structure, including all nesesery meta and semantic tags I decided my prject needed. Then, started to add one by one the fitures of my page and styling them.
 
-So I got up to ![these](images/Screenshot.png) an now what? 
+So I got up to this: ![this](images/Screenshot.png) And now what? 
 I have no idea.
 - First step - done: finaly managed to create a function, witch executes on click of the START button. The final countdown began!
+
 What I did: 
 1. Defined variables timer, startButton and cancelButton and asined to them the selected elements from the HTML file. 
 ```javascript
@@ -38,12 +39,13 @@ setInterval(() => {
     }, 1000)
 ```
     Let's try to work on changing the startButton now!
-4. startButton textContent changed on 'click' event in the eventListener.
+4. StartButton textContent changed on 'click' event in the eventListener.
 
 ```javascript
 startButton.textContent = 'PAUSE';
 ```
 Let's work on the loggic for 'PAUSE' and 'START'.
+
 5. That wasn't easy! 
 With defining a new variable myInterval, I managed to do it. 
 ```javascript
@@ -56,17 +58,69 @@ With defining a new variable myInterval, I managed to do it.
         timer.innerHTML = `${MM}:${SS < 10 ? '0' + SS : SS}`;
         workingTime--;
     }, 1) //just while checking, so is faster
-    //else pause
-} else {
-    startButton.textContent = 'START';
-    clearInterval(myInterval);
-    myInterval = -1;
-}      
+
+    //if working
+    } else {
+        startButton.textContent = 'START';
+        clearInterval(myInterval);
+        myInterval = -1;
+    }      
 ```
+- _I made the mistake to commit .DS_Store file and now my terminal shows quote>
+Will need to check what I did wrong and how to fix it._
+
+_Apparantly, I can't use ' in the message._ 
+
 6. So how to make it stop when 00:00 and start the 5 minutes break? 
+I tried everything with no succes. 
+
+__It took too long. Let's do something else!__
+
+7. Added an EventListener to the cancelButton to triger on 'click' event, using an arrow function to define the inline function and setInterval function in the eventListener to make the timer stop counting and used a template literal to assine the changes in its innerHTML.
+```javascript
+startButton.addEventListener('click', () => {
+    clearInterval(myInterval);
+    myInterval = 0;
+        let MM = 0 + '0';
+        let SS = 0 + '0';
+        timer.innerHTML = `${MM}:${SS}`;
+        workingTime = 0;
+        startButton.textContent = 'START';
+})
+```
+Now I need to take care of the workingTime and set it to start from 25 again after clicking startButton.
+
+__I'm in trouble! Can't do it!__
+
+__And I can't stop the timer when the 25 minutes have passed!__
+
+8. After spending a quite long time researching what the problem could be and trying every single advice, I found in google and youtube, I am still unable to solve the problem.
+My timer doesn't stop when workingTime <= 0.
+I can't find where my mistake is.
+So decided to refactor my code. For that reason, I'm creating another js file and hope that will work.
+
+Refactoring didn't work! I can't stop the timer.
+
+__No Panic!__
+
+Let's start debuging!
+
+I striped my code to spine only and guess what? 
+
+# Succes! 
+
+![that](images/Screenshot2.png)
+
+
+Now I can have coffe!
+
+I hope I will be abble to add the rest of my code back.
 
 
 
 
 
 
+
+Questions:
+1. What is `.DS_Store`?

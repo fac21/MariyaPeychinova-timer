@@ -18,6 +18,7 @@ section {
 
 header {
     height: 32vh;
+    color: rgb(266, 266, 266);
 }
 main {
     height: 60vh;
@@ -49,8 +50,12 @@ footer {
     margin-right: auto;
   }
 
-  .width-m {
+  .width-lg {
     max-width: 40rem;
+  }
+
+  .width-m {
+      max-width: 35rem;
   }
 
   .width-sm {
