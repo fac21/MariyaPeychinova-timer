@@ -1,32 +1,32 @@
 # MariyaPeychinova-timer
 ## Pomodoro timer mini-project from Workshop4 of FAC21 precourse
 
-I started with creatind a new private repository for my project within the FAC21 organisation on [GitHub](https://github.com/fac21/MariyaPeychinova-timer) and including a README.md.
+I started with creating a new private repository for my project within the FAC21 organisation on [GitHub](https://github.com/fac21/MariyaPeychinova-timer) and including a README.md.
 
 Then, I cloned the repo in the Workshops directory on my device, using the link provided and pasting it in my terminal.
 
-Using the terminal, in the MariyaPeychinova-timer directori I created new directories and new files for the HTML, CSS and Javascript. 
+Using the terminal, in the MariyaPeychinova-timer directory I created new directories and new files for the HTML, CSS and Javascript. 
 
-Starting with the html file, I created the main HTML page structure, including all nesesery meta and semantic tags I decided my prject needed. Then, started to add one by one the fitures of my page and styling them.
+Starting with the html file, I created the main HTML page structure, including all necessary meta and semantic tags I decided my project needed. Then, started to add one by one the features of my page and styling them.
 
 So I got up to this: ![this](images/Screenshot.png) And now what? 
 I have no idea.
-- First step - done: finaly managed to create a function, witch executes on click of the START button. The final countdown began!
+- First step - done: finally managed to create a function, witch executes on click of the START button. The final countdown began!
 
 What I did: 
-1. Defined variables timer, startButton and cancelButton and asined to them the selected elements from the HTML file. 
+1. Defined variables timer, startButton and cancelButton and assigned to them the selected elements from the HTML file. 
 ```javascript
 const timer = document.querySelector('.timer');
 const startButton = document.querySelector('.start-button');
 const cancelButton = document.querySelector('.cancel-button');
 ```
-2. Added an EventListener to the startButton to triger on 'click' event, using an arrow function to define the inline function.
+2. Added an EventListener to the startButton to trigger on 'click' event, using an arrow function to define the inline function.
 ```javascript
 startButton.addEventListener('click', () => {
 })
 ```
-3. I created a setInterval function in the eventListener to make the timer counts down from 25 and used a template literal to assine the changes in its innerHTML. I had to define variables for the startingMinutes and the workingTime, as I had to decrease it (workingTime--) in the function.
-Also defined variables for the minutes and the seconds assining to them their values.
+3. I created a setInterval function in the eventListener to make the timer counts down from 25 and used a template literal to assign the changes in its innerHTML. I had to define variables for the startingMinutes and the workingTime, as I had to decrease it (workingTime--) in the function.
+Also defined variables for the minutes and the seconds assigning to them their values.
 
 ```javascript
 setInterval(() => {
@@ -44,7 +44,7 @@ setInterval(() => {
 ```javascript
 startButton.textContent = 'PAUSE';
 ```
-Let's work on the loggic for 'PAUSE' and 'START'.
+Let's work on the logic for 'PAUSE' and 'START'.
 
 5. That wasn't easy! 
 With defining a new variable myInterval, I managed to do it. 
@@ -69,14 +69,14 @@ With defining a new variable myInterval, I managed to do it.
 - _I made the mistake to commit .DS_Store file and now my terminal shows quote>
 Will need to check what I did wrong and how to fix it._
 
-_Apparantly, I can't use ' in the message._ 
+_Apparently, I can't use ' in the message._ 
 
 6. So how to make it stop when 00:00 and start the 5 minutes break? 
-I tried everything with no succes. 
+I tried everything with no success. 
 
 __It took too long. Let's do something else!__
 
-7. Added an EventListener to the cancelButton to triger on 'click' event, using an arrow function to define the inline function and setInterval function in the eventListener to make the timer stop counting and used a template literal to assine the changes in its innerHTML.
+7. Added an EventListener to the cancelButton to trigger on 'click' event, using an arrow function to define the inline function and setInterval function in the eventListener to make the timer stop counting and used a template literal to assign the changes in its innerHTML.
 ```javascript
 startButton.addEventListener('click', () => {
     clearInterval(myInterval);
@@ -103,18 +103,18 @@ Refactoring didn't work! I can't stop the timer.
 
 __No Panic!__
 
-Let's start debuging!
+Let's start debugging!
 
 I striped my code to spine only and guess what? 
 
-# Succes! 
+# Success! 
 
 ![that](images/Screenshot2.png)
 
 
-Now I can have coffe!
+Now I can have coffee!
 
-I hope I will be abble to add the rest of my code back.
+I hope I will be able to add the rest of my code back.
 
 
 
