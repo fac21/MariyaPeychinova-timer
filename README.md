@@ -116,6 +116,16 @@ Now I can have coffee!
 
 I hope I will be able to add the rest of my code back.
 
+## All good! 
+Now I have to js files with a bit different sintax that work so far.
+
+9. Next job - to take care of the workingTime and set it to start from 25 again on clicking the startButton after 'CANCEL'.
+WOW, that was exciting!
+10. It's time for the break! Ding-Dong!
+The sound works finally!
+11. Set 5 min breakTime!
+Nearly there!
+
 
 
 
