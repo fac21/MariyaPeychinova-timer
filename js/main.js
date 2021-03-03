@@ -8,12 +8,15 @@
 const timer = document.querySelector('.timer');
 const startButton = document.querySelector('.start-button');
 const cancelButton = document.querySelector('.cancel-button');
+const section = document.querySelector('.section');
 const startingMinutes = 25;
 let workingTime = startingMinutes * 60;
 let myInterval = -1;
 let startingBreakTime = 5;
 let breakTime = startingBreakTime * 60;
 let sound = new Audio('goes-without-saying-608.mp3');
+//let howFastTheTimerGoes = 1;
+let howFastTheTimerGoes = 1000;
 
 
 //startButton - workingTime
@@ -25,8 +28,9 @@ startButton.addEventListener('click', () => {
     myInterval = setInterval(() => {
         //when is finished - clear work
         if (workingTime <= 0) {
-            //sound.play();
-            //sound.currentTime = 0;
+            section.classList.add('section-changed');
+            sound.play();
+            
             clearInterval(workingTime = 0);
             //set break
             //myInterval = breakTime
@@ -34,7 +38,7 @@ startButton.addEventListener('click', () => {
                 //if finished - clear break
             if (breakTime <= 0) {
                 clearInterval(breakTime = 0);
-                
+                sound.currentTime = 0;
             }
             let MM = Math.floor(breakTime / 60);
             let SS = breakTime % 60;
@@ -46,7 +50,7 @@ startButton.addEventListener('click', () => {
         let SS = workingTime % 60;
         timer.innerHTML = `${MM}:${SS < 10 ? '0' + SS : SS}`;
         workingTime--;
-    }, 1000)
+    }, howFastTheTimerGoes)
 
     //if working
 } else {
@@ -81,22 +85,3 @@ startButton.addEventListener('click', () => {
         }
 })
 
-// //break
-// function timeForBreak() {
-//     if (workingTime <= 0) {
-//         workingTime = breakTime;
-//     setInterval(() => {
-//         if (breakTime <= 0) {
-//             sound.play();
-//             clearInterval(breakTime = 0);
-            
-//         }
-//         let MM = Math.floor(breakTime / 60);
-//         let SS = breakTime % 60;
-//         timer.innerHTML = `${MM}:${SS < 10 ? '0' + SS : SS}`;
-//         breakTime--;
-//     }, 100)
-
-        
-//     }
-// }

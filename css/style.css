@@ -9,12 +9,20 @@ body {
     font-size: 40px;
 }
 
-section {
+.section {
     width: 100%;
     height: 100vh;
     background-image: url(../images/pomodoro.jpg);
     background-size: cover;
 }
+
+.section-changed {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/relax.jpg);
+    background-size: cover;
+}
+
 
 header {
     height: 32vh;
@@ -29,6 +37,8 @@ main {
 .timer {
     color: rgb(266, 266, 266);
 }
+
+
 
 button {
     width: 10rem;

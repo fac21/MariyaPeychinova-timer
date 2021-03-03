@@ -9,9 +9,11 @@ Using the terminal, in the MariyaPeychinova-timer directory I created new direct
 
 Starting with the html file, I created the main HTML page structure, including all necessary meta and semantic tags I decided my project needed. Then, started to add one by one the features of my page and styling them.
 
-So I got up to this: ![this](images/Screenshot.png) And now what? 
+So I got up to this: ![this](images/Screenshot.png) 
+
+And now what? 
 I have no idea.
-- First step - done: finally managed to create a function, witch executes on click of the START button. The final countdown began!
+- First step - done: finally managed to create a function, which executes on click of the START button. The final countdown began!
 
 What I did: 
 1. Defined variables timer, startButton and cancelButton and assigned to them the selected elements from the HTML file. 
@@ -117,7 +119,7 @@ Now I can have coffee!
 I hope I will be able to add the rest of my code back.
 
 ## All good! 
-Now I have to js files with a bit different sintax that work so far.
+Now I have two js files with a bit different syntax that work so far.
 
 9. Next job - to take care of the workingTime and set it to start from 25 again on clicking the startButton after 'CANCEL'.
 WOW, that was exciting!
@@ -130,12 +132,19 @@ Nearly there!
 Need to fix the breakTime and to stop the sound.
 It's not so easy!
 
-The break timer sims to be running too fast. Hm
+The break timer sims to be running too fast. Hm!
 
 Ok. BreakTime taken care of. 
 I think.
 
-No luck withthe sound, though.
+No luck with the sound, though.
+
+12. To summarise - workingTime and breakTime work perfectly, the sound still doesn't stop, but managed to change the backgroundImage on break and fixed the problem with its size. 
+
+Also fallowing a suggestion from Dan, defined two variables to use when want to speed the timer a bit, so no longer need to stare at my code looking for the number to change.
+
+## Happy!
+
 
 
 
@@ -145,3 +154,5 @@ No luck withthe sound, though.
 Questions:
 1. What is `.DS_Store`?
 2. How to make the sound to stop repeating?
+
+### If you are eager to see how my timer looks so far, click [here](https://fac21.github.io/MariyaPeychinova-timer/).
