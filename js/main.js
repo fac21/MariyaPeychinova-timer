@@ -25,14 +25,16 @@ startButton.addEventListener('click', () => {
     myInterval = setInterval(() => {
         //when is finished - clear work
         if (workingTime <= 0) {
-            sound.play();
+            //sound.play();
+            //sound.currentTime = 0;
             clearInterval(workingTime = 0);
             //set break
-            myInterval = setInterval(() => {
+            //myInterval = breakTime
+            setTimeout(() => {
                 //if finished - clear break
             if (breakTime <= 0) {
                 clearInterval(breakTime = 0);
-                //sound.play() = 'null'
+                
             }
             let MM = Math.floor(breakTime / 60);
             let SS = breakTime % 60;
