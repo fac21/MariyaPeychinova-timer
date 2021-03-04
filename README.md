@@ -146,7 +146,12 @@ Also fallowing a suggestion from Dan, defined two variables to use when want to 
 ## Happy!
 
 HA-HA! The sound problem fixed. Just looked at it differently. Why would I need an alarm that I can't stop! 
-:tada:  
+
+I used an audio from [fesliyanstudios.com](https://www.fesliyanstudios.com/royalty-free-music/downloads-c/peaceful-and-relaxing-music/22?page=2).
+
+![screenshot](images/screenshot3.png)
+
+:parasol_on_ground: 
 
 
 
@@ -156,6 +161,8 @@ HA-HA! The sound problem fixed. Just looked at it differently. Why would I need 
 
 Questions:
 1. What is `.DS_Store`?
-2. How to make the sound to stop repeating?
+2. How to make the sound to stop 
+repeating?
+3. Why I can't see the emoji in the Preview README.md?
 
 ### If you are eager to see how my timer looks so far, click [here](https://fac21.github.io/MariyaPeychinova-timer/).
