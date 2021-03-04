@@ -145,6 +145,8 @@ Also fallowing a suggestion from Dan, defined two variables to use when want to 
 
 ## Happy!
 
+HA-HA! The sound problem fixed. Just looked at it differently.
+
 
 
 

@@ -14,9 +14,11 @@ let workingTime = startingMinutes * 60;
 let myInterval = -1;
 let startingBreakTime = 5;
 let breakTime = startingBreakTime * 60;
-let sound = new Audio('goes-without-saying-608.mp3');
+//let sound = new Audio('goes-without-saying-608.mp3');
+let sound = new Audio('David_Fesliyan.mp3');
 //let howFastTheTimerGoes = 1;
-let howFastTheTimerGoes = 1000;
+//let howFastTheTimerGoes = 1000;
+let howFastTheTimerGoes = 100;
 
 
 //startButton - workingTime
