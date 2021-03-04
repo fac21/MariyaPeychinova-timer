@@ -149,7 +149,7 @@ HA-HA! The sound problem fixed. Just looked at it differently. Why would I need 
 
 I used an audio from [fesliyanstudios.com](https://www.fesliyanstudios.com/royalty-free-music/downloads-c/peaceful-and-relaxing-music/22?page=2).
 
-![screenshot](images/screenshot3.png)
+![screenshot](images/Screenshot3.png)
 
 :parasol_on_ground: 
 
