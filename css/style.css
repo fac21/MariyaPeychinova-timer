@@ -43,6 +43,7 @@ main {
 button {
     width: 10rem;
     height: 3rem;
+    border-radius: 3rem;
 }
 
 footer {
